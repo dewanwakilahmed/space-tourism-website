@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 
 /* -------------------- */
 /*   Custom properties  */
@@ -16,17 +16,16 @@
   --fs-700: 3.5rem;
   --fs-600: 2rem;
   --fs-500: 1.75rem;
-  --fs-450: 1.50rem;
+  --fs-450: 1.5rem;
   --fs-400: 1.125rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
 
   /* font-families */
-  --ff-serif: 'Bellefair', serif;
-  --ff-sans-cond: 'Barlow Condensed', sans-serif;
-  --ff-sans-normal: 'Barlow', sans-serif;
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
 }
-
 
 /* -------- */
 /*   Reset  */
@@ -65,13 +64,12 @@ p {
   font-weight: 400;
 }
 
-
 /* set up the body */
 body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
-  color: hsl( var(--clr-white) );
-  background-color: hsl( var(--clr-dark) );
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-dark));
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -102,7 +100,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
 
 /* ------------------ */
 /*   Utility classes  */
@@ -142,28 +139,27 @@ select {
 /* colors */
 
 .bg-dark {
-  background-color: hsl( var(--clr-dark) );
+  background-color: hsl(var(--clr-dark));
 }
 
 .bg-accent {
-  background-color: hsl( var(--clr-light) );
+  background-color: hsl(var(--clr-light));
 }
 
 .bg-white {
-  background-color: hsl( var(--clr-white) );
+  background-color: hsl(var(--clr-white));
 }
 
-
 .text-dark {
-  color: hsl( var(--clr-dark) );
+  color: hsl(var(--clr-dark));
 }
 
 .text-accent {
-  color: hsl( var(--clr-light) );
+  color: hsl(var(--clr-light));
 }
 
 .text-white {
-  color: hsl( var(--clr-white) );
+  color: hsl(var(--clr-white));
 }
 
 /* typography */
@@ -180,24 +176,21 @@ select {
   font-family: var(--ff-sans-normal);
 }
 
-
 .letter-spacing-1 {
   letter-spacing: 4.75px;
 }
 
 .letter-spacing-2 {
-  letter-spacing: 2.70px;
+  letter-spacing: 2.7px;
 }
 
 .letter-spacing-3 {
   letter-spacing: 2.35px;
 }
 
-
 .uppercase {
   text-transform: uppercase;
 }
-
 
 .fs-900 {
   font-size: var(--fs-900);
@@ -234,7 +227,6 @@ select {
 .fs-200 {
   font-size: var(--fs-200);
 }
-
 
 .fs-900,
 .fs-800,
