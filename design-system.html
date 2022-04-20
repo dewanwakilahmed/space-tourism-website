@@ -10,17 +10,47 @@
     <title>Design System</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="ff-sans-cond fs-450 uppercase">Design System</h1>
+    <div
+      class="container flex flow"
+      style="flex-direction: column; --flow-space: 5rem; margin: 2rem auto"
+    >
+      <header class="flex" style="justify-content: space-between">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="24" cy="24" r="24" fill="white" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
+            fill="#0B0D17"
+          />
+        </svg>
 
-      <section id="colors" style="margin: 4rem 0">
+        <h1
+          class="ff-sans-cond fs-500 uppercase text-accent"
+          style="letter-spacing: 4.05px"
+        >
+          Design System
+        </h1>
+      </header>
+
+      <section id="colors" style="--flow-space: 2.25rem">
         <h2 class="numbered-title"><span>01</span> Colors</h2>
 
         <div class="flex">
           <div style="flex-grow: 1">
             <div
               class="bg-dark ff-serif fs-450 text-white"
-              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+              style="
+                padding: 3rem 1rem 1rem;
+                border: 1px solid white;
+                margin-bottom: 1rem;
+              "
             >
               #0B0D17
             </div>
@@ -32,7 +62,11 @@
           <div style="flex-grow: 1">
             <div
               class="bg-accent ff-serif fs-450 text-dark"
-              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+              style="
+                padding: 3rem 1rem 1rem;
+                border: 1px solid white;
+                margin-bottom: 1rem;
+              "
             >
               #D0D6F9
             </div>
@@ -44,7 +78,11 @@
           <div style="flex-grow: 1">
             <div
               class="bg-white ff-serif fs-450 text-dark"
-              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+              style="
+                padding: 3rem 1rem 1rem;
+                border: 1px solid white;
+                margin-bottom: 1rem;
+              "
             >
               #FFFFFF
             </div>
@@ -55,33 +93,41 @@
         </div>
       </section>
 
-      <section id="typography" style="margin: 4rem 0">
+      <section id="typography">
         <h2 class="numbered-title"><span>02</span> Typography</h2>
 
         <div class="flex">
-          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 1.5rem">
             <div>
-              <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
+              <p class="text-accent" style="margin-bottom: 0.5rem">
+                Heading 1 - Bellefair Regular - 150px
+              </p>
               <p class="fs-900 ff-serif uppercase">Earth</p>
             </div>
 
             <div>
-              <p class="text-accent">Heading 2 - Bellefair Regular - 100px</p>
+              <p class="text-accent" style="margin-bottom: 0.5rem">
+                Heading 2 - Bellefair Regular - 100px
+              </p>
               <p class="fs-800 ff-serif uppercase">Venus</p>
             </div>
 
             <div>
-              <p class="text-accent">Heading 3 - Bellefair Regular - 56px</p>
+              <p class="text-accent" style="margin-bottom: 0.5rem">
+                Heading 3 - Bellefair Regular - 56px
+              </p>
               <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
             </div>
 
             <div>
-              <p class="text-accent">Heading 4 - Bellefair Regular - 32px</p>
+              <p class="text-accent" style="margin-bottom: 0.5rem">
+                Heading 4 - Bellefair Regular - 32px
+              </p>
               <p class="fs-600 ff-serif uppercase">Uranus, Neptune, & Pluto</p>
             </div>
 
             <div>
-              <p class="text-accent">
+              <p class="text-accent" style="margin-bottom: 0.5rem">
                 Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character
                 Space
               </p>
@@ -93,14 +139,16 @@
             </div>
           </div>
 
-          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 1.5rem">
             <div>
-              <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
+              <p class="text-accent" style="margin-bottom: 0.5rem">
+                Subheading 1 - Bellefair Regular - 28px
+              </p>
               <p class="fs-500 ff-serif uppercase">384,400 km</p>
             </div>
 
             <div>
-              <p class="text-accent">
+              <p class="text-accent" style="margin-bottom: 0.5rem">
                 Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
                 Space
               </p>
@@ -110,7 +158,7 @@
             </div>
 
             <div>
-              <p class="text-accent">
+              <p class="text-accent" style="margin-bottom: 0.5rem">
                 Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
               </p>
               <p class="fs-300 ff-sans-cond letter-spacing-2 uppercase">
@@ -119,7 +167,7 @@
             </div>
 
             <div>
-              <p class="text-accent">Body</p>
+              <p class="text-accent" style="margin-bottom: 0.5rem">Body</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
@@ -144,88 +192,148 @@
       <section id="interactive-elements">
         <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
 
-        <div>
-          <nav>
-            <ul class="primary-navigation underline-indicators flex">
-              <li class="active">
-                <a class="uppercase text-white letter-spacing-2" href="#"
-                  ><span>00</span> Active</a
-                >
-              </li>
-              <li>
-                <a class="uppercase text-white letter-spacing-2" href="#"
-                  ><span>01</span>Hovered</a
-                >
-              </li>
-              <li>
-                <a class="uppercase text-white letter-spacing-2" href="#"
-                  ><span>02</span>Idle</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="flex">
-          <div style="margin-top: 5rem">
-            <a
-              href="#"
-              class="large-button uppercase ff-serif fs-600 text-dark bg-white"
-              >Explore</a
+        <div class="flex" style="flex-direction: column; --gap: 2.5rem">
+          <div>
+            <nav>
+              <ul class="primary-navigation underline-indicators flex">
+                <li class="active">
+                  <a
+                    class="uppercase text-white letter-spacing-2 fs-300"
+                    href="#"
+                    ><span>00</span>Earth</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase text-white letter-spacing-2 fs-300"
+                    href="#"
+                    ><span>01</span>Mars</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase text-white letter-spacing-2 fs-300"
+                    href="#"
+                    ><span>02</span>Jupiter</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <p
+              class="text-accent"
+              style="text-align: center; margin-top: 0.5rem"
             >
+              Navigation Bar
+            </p>
           </div>
 
-          <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
-            <div class="tab-list underline-indicators flex">
+          <div>
+            <div
+              class="tab-list underline-indicators flex"
+              style="justify-content: center"
+            >
               <button
                 aria-selected="true"
-                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2 fs-300"
               >
                 Moon
               </button>
               <button
                 aria-selected="false"
-                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2 fs-300"
               >
-                Mars
+                Titan
               </button>
               <button
                 aria-selected="false"
-                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2 fs-300"
               >
                 Europa
               </button>
             </div>
+            <p
+              class="text-accent"
+              style="text-align: center; margin-top: 0.5rem"
+            >
+              Tabs
+            </p>
+          </div>
 
-            <div class="dot-indicators flex">
-              <button aria-selected="true">
-                <span class="sr-only">Slide title</span>
-              </button>
-              <button aria-selected="false">
-                <span class="sr-only">Slide title</span>
-              </button>
-              <button aria-selected="false">
-                <span class="sr-only">Slide title</span>
-              </button>
+          <div class="flex">
+            <div class="grid" style="flex-basis: 50%; place-items: center">
+              <a
+                href="#"
+                class="large-button uppercase ff-serif fs-600 text-dark bg-white"
+                >Explore</a
+              >
+              <p
+                class="text-accent"
+                style="text-align: center; margin-top: 2rem"
+              >
+                Main Button
+              </p>
             </div>
 
             <div
-              class="number-indicators flex"
-              style="flex-direction: column; --gap: 2rem"
+              class="grid"
+              style="flex-basis: 50%; place-items: center; --gap: 4rem"
             >
-              <button aria-selected="true" class="ff-serif fs-600 text-white">
-                1
-              </button>
-              <button aria-selected="false" class="ff-serif fs-600 text-white">
-                2
-              </button>
-              <button aria-selected="false" class="ff-serif fs-600 text-white">
-                3
-              </button>
+              <div>
+                <div class="dot-indicators flex" style="--gap: 1rem">
+                  <button aria-selected="true">
+                    <span class="sr-only">Slide title</span>
+                  </button>
+                  <button aria-selected="false">
+                    <span class="sr-only">Slide title</span>
+                  </button>
+                  <button aria-selected="false">
+                    <span class="sr-only">Slide title</span>
+                  </button>
+                </div>
+                <p
+                  class="text-accent"
+                  style="text-align: center; margin-top: 0.5rem"
+                >
+                  Slider 1
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="number-indicators flex"
+                  style="flex-direction: column; --gap: 1rem"
+                >
+                  <button
+                    aria-selected="true"
+                    class="ff-serif fs-600 text-white"
+                  >
+                    1
+                  </button>
+                  <button
+                    aria-selected="false"
+                    class="ff-serif fs-600 text-white"
+                  >
+                    2
+                  </button>
+                  <button
+                    aria-selected="false"
+                    class="ff-serif fs-600 text-white"
+                  >
+                    3
+                  </button>
+                </div>
+                <p
+                  class="text-accent"
+                  style="text-align: center; margin-top: 0.5rem"
+                >
+                  Slider 2
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <!-- <img src="./assets/design-system-footer-img.png" alt="earth" /> -->
   </body>
 </html>
